@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+  
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    background-image: url(../images/xyz2.png);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+.flex-item-right .ceo-name h1, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container .flex-item-left .logo img{
+    height: 200px;
+    width: 230px;
+    position: relative;
+    bottom: -110px;
+}
+.flex-item-middle .flex-middle-image img{
+    transform: rotate(10deg);
+}
+
+.flex-container .company-ceo-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid orange;
+    border-radius: 4px;
+    position: relative;
+    bottom: -130px;
+    /* object-position: 25% 25%; */
+    /* clip-path: inset(35px 47px 65px 46px round 8px); */
+}
+.ceo-name{
+    position: relative;
+    top: 71px;
+}
+.about .address span{
+    text-align-last: justify;
+}
+  
+.flex-item-left {
+    padding: 10px;
+    flex: 30%;
+}
+
+.flex-item-middle {
+    padding: 10px;
+    flex: 20%;
+}
+.flex-container .flex-item-middle .flex-middle-image img{
+    height: 700px;
+    width: 175px;
+}
+  
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right .ceo-name{
+    position: relative;
+    top: 100px;
+    right: 49px;
+}
+/* .flex-container .flex-item-right .ceo-name p{
+    border-bottom: 3px solid purple;
+    width: 100px;
+    left: 20px;
+    position: relative;
+} */
+.about{
+    position: relative;
+    top: 175px;
+    left: -300px;
+}
+.about .icon .fa-solid{
+    border: 8px solid #f89121;
+    border-radius: 3px;
+    background-color: #f89121;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 420px;
+    bottom: 52px;
+}
+.about .address{
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+.about .icon .fa-location-dot{
+    background-color: #0765ae;
+    border: 8px solid #0765ae;
+    color: white;
+}
+
+.about .address{
+    text-align: right;
+}
+/* Flex Responsive */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+  /* Mobile Version */
+@media only screen and (max-width: 600px) {
+    .flex-item-middle .flex-middle-image{
+        display: none;
+    }
+    .flex-item-right .ceo-name{
+        position: relative;
+        right: 10px;
+    }
+    .about{
+        position: relative;
+        left: -50px;
+    }
+    .about .address{
+        font-size: 19px;
+    }
+    .about .icon .fa-solid{
+        font-size: 20px;
+        position: relative;
+        left: 230px;
+        bottom: 35px;
+    }
+}
